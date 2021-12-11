@@ -7,6 +7,12 @@ class Currency:
         self.resp_data = None
         
     def get(self):
-        response = requests.get(self.api_url, timeout=5)
-        self.resp_data = response.json()
+        try:
+            response = requests.get(self.api_url, timeout=5)
+            self.resp_data = response.json()
+            return True
+
+        except:
+            print("Check internet: Public API call Failed")
+            return False
 

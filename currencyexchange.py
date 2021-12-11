@@ -7,8 +7,14 @@ class ProcessExchangeRates:
         self.resp_data = None
 
     def get(self, from_currency, to_currency, amount):
-        params = {'from': from_currency, 'to': to_currency, 'amount':amount}
-        response = requests.get(self.api_url, params=params, timeout=5)
-        self.resp_data = response.json()
+        try:
+            params = {'from': from_currency, 'to': to_currency, 'amount':amount}
+            response = requests.get(self.api_url, params=params, timeout=5)
+            self.resp_data = response.json()
+            return True
+
+        except:
+            print("Check internet: Public API call Failed")
+            return False
 
 
