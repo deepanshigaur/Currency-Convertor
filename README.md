@@ -11,17 +11,21 @@ _Replace anything surrounded by the `< >` symbols._
 Please make sure you have completed the soot survey at:
     [soot.binghamton.edu](https://soot.binghamton.edu)
 
-Please list the urls for the APIs you used:
+Please list the urls for the APIs you used: 
+"https://api.frankfurter.app/currencies"
+"https://api.frankfurter.app/latest"
 
 Summary of Program:
+Used two APIs to create a currency convertor and added three excepts to make sure the code doesn't break.
 
 Most Challenging topic in the course:
+Graphic User Interface
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+None
 
 ## REFERENCES:
- < List any outside resources used >
+None
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+The final commit 1 is supposed to be the actual Commit 1 for APIs, before that I was trying something out and made a commit by mistake so please ignore the multiple initial commits and commit 1- APIs. 
